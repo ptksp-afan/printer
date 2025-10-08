@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@iamtomcat/printer": "^0.7.0"
+  }
+}
