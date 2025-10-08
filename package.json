@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@iamtomcat/printer": "^0.7.0"
+    "@grandchef/node-printer": "^0.8.0"
   }
 }

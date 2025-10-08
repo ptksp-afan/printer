@@ -5,9 +5,11 @@ set -e
 
 # Simpan direktori kerja saat ini
 pwd="$(pwd)"
-package="./node_modules/@iamtomcat/printer"
+package="./node_modules/@grandchef/node-printer"
 
 echo "📦 Membangun modul native untuk Darwin x64..."
+
+cp ./node-printer.binding.gyp "$package/binding.gyp"
 
 # Pindah ke direktori package
 cd "$package"

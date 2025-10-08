@@ -4,7 +4,9 @@ setlocal enabledelayedexpansion
 echo 📦 Membangun modul native untuk Windows 32-bit...
 
 set "PWD=%cd%"
-set "PACKAGE=.\node_modules\@iamtomcat\printer"
+set "PACKAGE=.\node_modules\@grandchef\node-printer"
+
+copy "node-printer.binding.gyp" "%PACKAGE%\binding.gyp" >nul
 
 cd /d "%PACKAGE%"
 

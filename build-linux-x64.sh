@@ -4,9 +4,11 @@
 set -e
 
 pwd="$(pwd)"
-package="./node_modules/@iamtomcat/printer"
+package="./node_modules/@grandchef/node-printer"
 
 echo "📦 Membangun @iamtomcat/printer untuk Linux x64..."
+
+cp ./node-printer.binding.gyp "$package/binding.gyp"
 
 cd "$package"
 npx node-gyp rebuild --target=38.1.2 --dist-url=https://electronjs.org/headers --arch=x64
