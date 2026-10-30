@@ -26,6 +26,10 @@
       'include_dirs' : [
         "<!(node -e \"require('nan')\")"
       ],
+      # GCC can't parse `class [[deprecated]] __attribute__(...)` in the Electron 45 V8 headers
+      'defines!': [
+        'V8_DEPRECATION_WARNINGS=1'
+      ],
       'cflags_cc+': [
         "-Wno-deprecated-declarations"
       ],
