@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@grandchef/node-printer": "^0.8.0"
+  },
+  "overrides": {
+    "nan": "^2.30.0"
   }
 }
