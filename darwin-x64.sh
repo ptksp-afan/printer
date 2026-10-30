@@ -14,8 +14,8 @@ cp ./node-printer.binding.gyp "$package/binding.gyp"
 # Pindah ke direktori package
 cd "$package"
 
-# Jalankan proses build menggunakan node-gyp untuk Electron target 38.1.2 dan arsitektur x64
-npx node-gyp rebuild --target=38.1.2 --dist-url=https://electronjs.org/headers --arch=x64
+# Jalankan proses build menggunakan node-gyp untuk Electron target 45.1.0 dan arsitektur x64
+npx node-gyp rebuild --target=45.1.0 --dist-url=https://electronjs.org/headers --arch=x64
 
 # Kembali ke direktori awal
 cd "$pwd"

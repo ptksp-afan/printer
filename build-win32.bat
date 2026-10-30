@@ -10,8 +10,8 @@ copy "node-printer.binding.gyp" "%PACKAGE%\binding.gyp" >nul
 
 cd /d "%PACKAGE%"
 
-:: Jalankan node-gyp rebuild untuk Electron target 38.1.2 dengan arsitektur ia32 (32-bit)
-npx node-gyp rebuild --target=38.1.2 --dist-url=https://electronjs.org/headers --arch=ia32
+:: Jalankan node-gyp rebuild untuk Electron target 45.1.0 dengan arsitektur ia32 (32-bit)
+npx node-gyp rebuild --target=45.1.0 --dist-url=https://electronjs.org/headers --arch=ia32
 
 cd /d "%PWD%"
 

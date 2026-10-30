@@ -11,7 +11,7 @@ echo "📦 Membangun @iamtomcat/printer untuk Linux x64..."
 cp ./node-printer.binding.gyp "$package/binding.gyp"
 
 cd "$package"
-npx node-gyp rebuild --target=38.1.2 --dist-url=https://electronjs.org/headers --arch=x64
+npx node-gyp rebuild --target=45.1.0 --dist-url=https://electronjs.org/headers --arch=x64
 
 cd "$pwd"
 
